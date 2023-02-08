@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Duos Game</title>
+
+    <script defer src="scripts.js"></script>
+    <style>
+         ::selection {
+            color: #84b0af;
+        }
+        
+        .body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 16px;
+            color: #061b33;
+            background-color: #b6d8d5;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: auto;
+            margin-left: auto;
+            padding-right: 15px;
+            padding-left: 15px;
+            width: 720px;
+        }
+        
+        .mainHeading {
+            margin: 10px auto;
+        }
+        
+        .setupForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .simpleText,
+        .inputNumber,
+        .startButton {
+            margin-bottom: 10px;
+        }
+        
+        .inputNumber {
+            width: 250px;
+            padding: 5px;
+            border: none;
+            border-radius: 12px;
+            outline: none;
+            transition: box-shadow .3s;
+        }
+        
+        .inputNumber:focus {
+            box-shadow: #061b33 5px 5px;
+        }
+        
+        .startButton,
+        .playAgainButton {
+            padding: 5px 0;
+            width: 258px;
+            border: none;
+            border-radius: 12px;
+            background-color: #84b0af;
+            cursor: pointer;
+            outline: none;
+            transition: transform .3s, background-color .3s, box-shadow .3s;
+        }
+        
+        .startButton:hover,
+        .playAgainButton:hover {
+            transform: scale(1.05);
+            background-color: #c45238;
+            box-shadow: #061b33 5px 5px;
+        }
+        
+        .gameContainer {
+            display: grid;
+            grid-auto-rows: 80px;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .card {
+            position: relative;
+            margin: 5px;
+            padding: 5px;
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 50px;
+            color: #84b0af;
+            background-color: #84b0af;
+            cursor: pointer;
+            transition: transform .3s, box-shadow .3s;
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: #061b33 5px 5px;
+        }
+        
+        .cardText {
+            visibility: collapse;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 60px;
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>
